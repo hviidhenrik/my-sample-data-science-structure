@@ -27,6 +27,13 @@ as this directory will house your source code and thus be used in imports in oth
 
 The template comes predefined with some helpful path definitions. See them in: `importname/config/definitions.py`
 
+### Formatting
+The files were formatted using isort and black. I recommend running isort to sort imports correctly 
+and then format code nicely using black with a line length of 120:
+
+    isort .
+    black . --line-length=120
+
 Project Organization
 ------------
 

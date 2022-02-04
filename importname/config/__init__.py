@@ -1,1 +1,13 @@
-from importname.config.definitions import PATH_CONFIG, PATH_PROJECT_ROOT, PATH_SRC
+from importname.config.definitions import (
+    PATH_CONFIG,
+    PATH_DATA,
+    PATH_DATA_INTERIM,
+    PATH_DATA_PROCESSED,
+    PATH_DATA_RAW,
+    PATH_NOTEBOOKS,
+    PATH_PROJECT_ROOT,
+    PATH_REPORTS,
+    PATH_SAVED_MODELS,
+    PATH_SRC,
+    PATH_TESTS,
+)
