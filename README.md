@@ -23,7 +23,9 @@ https://github.com/hviidhenrik/my-sample-package-structure
      name, e.g., `numpy` for the above example.  
    - `packagename` in setup.py - this is the name of your package and used when installing it in 
      other projects.
-4. Write your code!
+4. Using a Python environment of your choice (like conda or virtualenv), install requirements: 
+   `pip install -r requirements.txt`
+5. Write your code!
 
 *This directory is sometimes called simply `src`, but this could cause problems if you have other custom-built packages
 as this directory will house your source code and thus be used in imports in other projects.
