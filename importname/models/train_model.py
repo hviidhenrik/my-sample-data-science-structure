@@ -5,7 +5,7 @@ def get_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run model training")
     parser.add_argument("--epochs", default=30, type=int)
     parser.add_argument("--val-split", default=0.1, type=float)
-    parser.add_argument("--stop-early", default=False, type=bool, action="store_true")
+    parser.add_argument("--stop-early", default=False, action="store_true")
     args = parser.parse_args()
     return args
 
