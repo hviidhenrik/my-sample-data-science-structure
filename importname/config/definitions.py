@@ -1,4 +1,7 @@
+import os
 from pathlib import Path
+
+# os.environ["DATASETS"]  # if data outside the project, point an environment variable "DATASETS" to the dir
 
 PATH_CONFIG = Path(__file__).parent
 PATH_SRC = PATH_CONFIG.parent  # optionally, change this to reflect the name of the 'importname' directory
