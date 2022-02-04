@@ -2,10 +2,10 @@
 -e .
 
 # Some useful, but optional packages, mostly for formatting
-# black
-# isort
+pipreqs
+black
+isort
 # pylint
-# pipreqs
 
 # Data science packages
 # numpy
