@@ -16,8 +16,13 @@ https://github.com/hviidhenrik/my-sample-package-structure
 
 1. Create a new repo on GitHub using this as a template.
 2. Clone your new repo locally.
-3. Change the name of the 'importname' directory to match your project.*
-   Also change this name in the import in importname/config/\_\_init__.py and in setup.py
+3. Change the names of: 
+   - the `importname` directory which holds your source code to match your project e.g., `numpy`, 
+     if this was the numpy package.*
+   - the import statement in `importname/config/\_\_init__.py` should be changed to the same 
+     name, e.g., `numpy` for the above example.  
+   - `packagename` in setup.py - this is the name of your package and used when installing it in 
+     other projects.
 4. Write your code!
 
 *This directory is sometimes called simply `src`, but this could cause problems if you have other custom-built packages
@@ -29,7 +34,8 @@ The template comes predefined with some helpful path definitions. See them in: `
 
 ### Formatting
 The files were formatted using isort and black. I recommend running isort to sort imports correctly 
-and then format code nicely using black with a line length of 120:
+and then format code nicely using black with a line length of 120. Black uses 88 per default, 
+but this sometimes causes too many line breaks in my opinion. Just do what makes you happy!
 
     isort .
     black . --line-length=120
