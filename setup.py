@@ -10,4 +10,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     packages=find_packages(),
+    # install_requires=[""]  # put package / dependencies required to run this one
 )
