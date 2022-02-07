@@ -16,7 +16,7 @@ https://github.com/hviidhenrik/my-sample-package-structure
 
 1. Create a new repo on GitHub using this as a template.
 2. Clone your new repo locally.
-5. Write your code!
+3. Write your code!
 
 ##### Note:
 
