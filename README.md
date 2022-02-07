@@ -19,7 +19,7 @@ https://github.com/hviidhenrik/my-sample-package-structure
 3. Change the names of: 
    - the `importname` directory which holds your source code to match your project e.g., `numpy`, 
      if this was the numpy package.*
-   - the import statement in `importname/config/\_\_init__.py` should be changed to the same 
+   - the import statement in `importname/config/__init__.py` should be changed to the same 
      name, e.g., `numpy` for the above example.  
    - `packagename` in setup.py - this is the name of your package and used when installing it in 
      other projects.
