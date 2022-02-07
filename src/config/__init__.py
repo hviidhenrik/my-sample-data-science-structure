@@ -1,4 +1,4 @@
-from importname.config.definitions import (
+from src.config.definitions import (
     PATH_CONFIG,
     PATH_DATA,
     PATH_DATA_INTERIM,
