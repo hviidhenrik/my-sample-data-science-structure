@@ -19,7 +19,7 @@ and uncomment the line below
 """
 
 
-# PATH_DATA = os.environ["DATASETS"]
+# PATH_DATA = Path(os.environ["DATASETS"])
 
 def test_path_definitions():
     """
