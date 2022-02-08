@@ -1,5 +1,5 @@
-from src.config import definitions
+from src import config
 
 
 def test_configured_path_definitions():
-    definitions.test_path_definitions()
+    config.test_path_definitions()
