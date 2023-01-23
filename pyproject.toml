@@ -1,0 +1,7 @@
+[tool.black]
+line-length = 120
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: has external dependencies, such as queue or storage. Only to be run locally",
+]

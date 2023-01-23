@@ -1,4 +1,5 @@
 import argparse
+from core.config import model_cfg
 
 
 def get_args() -> argparse.Namespace:

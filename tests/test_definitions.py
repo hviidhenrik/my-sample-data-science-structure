@@ -1,4 +1,4 @@
-from src import config
+from core import config
 
 
 def test_configured_path_definitions():

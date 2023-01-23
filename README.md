@@ -25,23 +25,28 @@ See them in: `src/config/definitions.py`
 
 ### Formatting
 The files were formatted using isort and black. I recommend running isort to sort imports correctly 
-and then format code nicely using black with a line length of 120. Black uses 88 per default, 
-but this sometimes causes too many line breaks in my opinion. Just do what makes you happy!
+and then format code nicely using black with a line length of 120.
 
     isort .
-    black . --line-length=120
+    black . -l 120
+
+A template `.pre-commit-config.yaml` file is available. First install pre-commit 
+
+    pip install pre-commit
+
+Then run it by using 
+
+    pre-commit run --all-files
 
 Project Organization
 ------------
-
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
+    ├── config             <- configuration files for path definitions and model config file
+    ├── data               <- for storing data files
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
     ├── experiments        <- Scripts for running experiments on the data
-    ├── models             <- Trained and serialized models
+    ├── models             <- Trained, serialized models
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
@@ -57,23 +62,16 @@ Project Organization
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pipreqs .`
     │
+    ├── .pre-commit-config.yaml  <- template pre-commit configuration
+    ├── pyproject.toml           <- config file for various formatters including black 
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    └── src                <- Source code for use in this project. The name you'll use to import stuff
-        ├── __init__.py    <- Makes src a Python module
-        │
-        ├── data           <- Scripts to download or generate data
-        │   └── make_dataset.py
-        │
-        ├── features       <- Scripts to turn raw data into features for modeling
-        │   └── build_features.py
-        │
-        ├── models         <- Scripts to train models and then use trained models to make
-        │   │                 predictions
-        │   ├── predict_model.py
-        │   └── train_model.py
-        │
-        └── visualization  <- Scripts to create exploratory and results oriented visualizations
-            └── visualize.py
+    └── core               <- Source code for use in this project. The name you'll use to import stuff
+        ├── __init__.py    <- Makes core a Python module
+        └── models         <- Scripts to train models and then use trained models to make
+            │                 predictions
+            ├── predict_model.py
+            └── train_model.py
+
 
 
 

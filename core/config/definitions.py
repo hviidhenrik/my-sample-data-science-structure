@@ -25,28 +25,28 @@ def test_path_definitions():
     """
     tests that the path definitions are correct
     """
-    assert str(PATH_CONFIG).endswith("src\\config"), \
-        "config path not correct, check src/config/definitions.py"
-    assert str(PATH_SRC).endswith(str(PATH_PROJECT_ROOT / "src")), \
-        "src path not correct, check src/config/definitions.py"
+    assert str(PATH_CONFIG).endswith("core\\config"), \
+        "config path not correct, check core/config/definitions.py"
+    assert str(PATH_SRC).endswith(str(PATH_PROJECT_ROOT / "core")), \
+        "core path not correct, check core/config/definitions.py"
     assert str(PATH_DATA).endswith(str(PATH_PROJECT_ROOT / "data")), \
-        "data path not correct, check src/config/definitions.py"
+        "data path not correct, check core/config/definitions.py"
     assert str(PATH_EXPERIMENTS).endswith(str(PATH_PROJECT_ROOT / "experiments")), \
-        "experiments path not correct, check src/config/definitions.py"
+        "experiments path not correct, check core/config/definitions.py"
     assert str(PATH_DATA_RAW).endswith("data\\raw"), \
-        "raw data path not correct, check src/config/definitions.py"
+        "raw data path not correct, check core/config/definitions.py"
     assert str(PATH_DATA_INTERIM).endswith(
-        "data\\interim"), "interim data path not correct, check src/config/definitions.py"
+        "data\\interim"), "interim data path not correct, check core/config/definitions.py"
     assert str(PATH_DATA_PROCESSED).endswith(
-        "data\\processed"), "processed data path not correct, check src/config/definitions.py"
+        "data\\processed"), "processed data path not correct, check core/config/definitions.py"
     assert str(PATH_SAVED_MODELS).endswith(str(PATH_PROJECT_ROOT / "models")), \
-        "saved models path not correct, check src/config/definitions.py"
+        "saved models path not correct, check core/config/definitions.py"
     assert str(PATH_NOTEBOOKS).endswith(str(PATH_PROJECT_ROOT / "notebooks")), \
-        "notebooks path not correct, check src/config/definitions.py"
+        "notebooks path not correct, check core/config/definitions.py"
     assert str(PATH_REPORTS).endswith(str(PATH_PROJECT_ROOT / "reports")), \
-        "reports path not correct, check src/config/definitions.py"
+        "reports path not correct, check core/config/definitions.py"
     assert str(PATH_TESTS).endswith(str(PATH_PROJECT_ROOT / "tests")), \
-        "tests path not correct, check src/config/definitions.py"
+        "tests path not correct, check core/config/definitions.py"
 
     print("\nConfigured paths:\n")
     print(PATH_CONFIG)

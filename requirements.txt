@@ -12,6 +12,8 @@ isort
 # matplotlib
 # scikit-learn
 # scipy
+# statsmodels
+# tensorflow
 
 # Testing
 # pytest
